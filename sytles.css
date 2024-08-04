@@ -1,0 +1,74 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --color1: #F9ED69;
+    --color2: #F08A5D;
+    --color3: #B83B5E;
+    --color4: #6A2C70;
+    --color5: #fff;
+    --color6: #000;
+}
+body{
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jokes-container{
+    background-color: var(--color3);
+    padding: 50px;
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.joke-box-intro{
+    display: flex;
+}
+.joke-box-adult, .joke-box-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emoji{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+#getPerYes-btn, #getPerNo-btn{
+    margin-right: 10px ;
+}
+#getPerYes-btn, #getPerNo-btn, #getJoke-btn{
+    background-color: var(--color4);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color:var(--color5);
+    width: fit-content;
+}
+.jokes-text{
+    width: 100%;
+    height: fit-content;
+    color: var(--color5);
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 16px;
+    opacity: 0;
+}
+.textFade{
+    opacity: 1;
+    transition: opacity 1.3s;
+}
